@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tile Composition</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+      } 
+      .container {
+        width: 900x;
+        height: 1410px;
+        display: grid;
+        background-color: black;              
+        gap: 20px;
+        grid-template-columns: 70px 330px 150px 300px 30px 70px 80px 150px 50px;
+        grid-template-rows: 100px 150px 200px 100px 100px 100px 200px 250px 50px;
+      }
+
+      .item{
+        background-color: rgb(226, 238, 226);
+      }
+      .red1 {
+        grid-area: 1/1/2/2;
+        background-color: red;            
+      }
+      .white1 {
+        grid-column: span 1;  
+      }
+      .blue1 {
+        grid-column: span 1;
+        background-color: blue;
+      }
+      .white2 {
+        grid-column: span 1;  
+      }
+      .white3 {
+        grid-column: span 1 ;  
+      }
+      .white4 {
+        grid-column: span 1;  
+      }
+      .white5 {
+        grid-column: span 1;  
+      }
+      .white6 {
+        grid-column: span 1;  
+      }
+      .white7 {
+        grid-area: 1/9/7/10;
+      }
+
+      .red2 {
+        grid-area: 2/1/3/2;
+        background-color: red;
+      }      
+      .white8 {
+        grid-area:3/1/6/2;        
+      }
+      .white9 {
+          grid-area: 2/2/4/3;
+      }    
+      .white10 {
+        grid-area: 2/3/4/4;  
+      }
+      .white11 {
+        grid-area: 2/4/4/5;
+      }
+      .white12 {
+        grid-area: 2/5/4/6;
+      }  
+      .white13 {
+        grid-area: 2/6/4/7;
+      }  
+      .white14 {
+       grid-area: 2/7/4/8;
+      }
+      .white15 {
+         grid-area: 2/8/4/9; 
+      }
+
+      .red3 {
+        grid-area: 6/1/7/2;
+        background-color: red;
+      }
+      .white16 {
+       grid-area: 4/2/7/3;
+      }
+      .yellow {
+        grid-area: 4/3/7/4;
+          background-color: yellow;
+      }
+      .white17 {
+        grid-area:4/4/7/5;  
+      }
+      .white18 {
+        grid-area: 4/5/7/6;
+      }
+      .white19 {
+        grid-area: 4/6/7/7;
+      }
+      .white20 {
+        grid-area:4/7/7/8;
+      }  
+      .white21 {
+        grid-area: 4/8/5/9;
+      }
+      .red4 {
+        grid-area: 5/8/6/9;
+        background-color: red;
+      }
+      .white22 {
+        grid-area: 6/8/7/9;       
+      }
+    .white23 {
+      grid-area: 7/1/10/3;
+    }
+    .white24 {
+     grid-area: 7/3/9/5;  
+    }
+    .white25 {
+      grid-area: 7/5/8/6;
+    }
+    .white26 {
+      grid-area: 7/6/8/7; 
+    }
+    .white27 {
+      grid-area: 7/7/8/8; 
+    }
+    .white28 {
+      grid-area: 7/8/8/10;
+    }  
+    .white29 {
+      grid-area: 8/5/9/6;
+    }  
+    .white30 {
+      grid-area: 8/6/9/7; 
+    }
+    .white31 {
+      grid-area: 8/7/9/8;
+    }
+    .white32 {
+      grid-area: 8/8/9/10; 
+    }
+    .white33 {
+      grid-area: 9/3/10/5;
+    }
+    .white34 {
+      grid-area: 9/5/10/6;  
+    }        
+    .white35 {
+      grid-area: 9/6/10/8;
+    }        
+    .blue2 {
+      grid-area: 9/8/10/10;
+        background-color: blue;
+    }      
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="item"></div>        
+        <div class="item red1"></div>
+        <div class="item white1"></div>        
+        <div class="item blue1"></div>
+        <div class="item white2"></div>
+        <div class="item white3"></div>
+        <div class="item white4"></div>
+        <div class="item white5"></div>
+        <div class="item white6"></div>
+        <div class="item white7"></div>
+
+        <div class="item red2"></div>
+        <div class="item white8"></div>
+        <div class="item white9"></div>
+        <div class="item white10"></div>
+        <div class="item white11"></div>
+        <div class="item white12"></div>
+        <div class="item white13"></div>
+        <div class="item white14"></div>
+        <div class="item white15"></div>
+
+        <div class="item red3"></div>
+        <div class="item white16"></div>
+        <div class="item yellow"></div> 
+        <div class="item white17"></div>
+        <div class="item white18"></div>
+        <div class="item white19"></div>
+        <div class="item white20"></div>
+        <div class="item white21"></div>
+        <div class="item red4"></div>        
+        <div class="item white22"></div>
+
+        <div class="item white23"></div>
+        <div class="item white22"></div>
+        <div class="item white23"></div>
+        <div class="item white24"></div>
+        <div class="item white25"></div>
+        <div class="item white26"></div>
+        <div class="item white27"></div>
+        <div class="item white28"></div>
+        <div class="item white29"></div>
+
+        <div class="item white30"></div>
+        <div class="item white31"></div>
+        <div class="item white32"></div>
+        <div class="item white33"></div>
+
+        <div class="item white34"></div>
+        <div class="item white35"></div>        
+        <div class="item blue2"></div>       
+
+    </div>
+    
+</body>
+</html>
